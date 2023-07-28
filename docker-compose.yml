@@ -18,8 +18,6 @@ services:
     image: postgres:alpine
     container_name: docker_compose
     restart: unless-stopped
-#    volumes:
-#      - ./database:/var/lib/postgresql/data
     env_file:
       - .env
     ports:
